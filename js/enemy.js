@@ -94,10 +94,12 @@ class Enemies {
     }
 
     playSprite() {
-        this.nextFramePosition = -(this.currentFrame * this.frameWidth);
-        this.enemyElement.style.backgroundPosition = `${this.nextFramePosition}px 0`;
-        this.currentFrame = (this.currentFrame + 1) % this.totalFrames;
 
+        if (Game.framesCounter % 10 === 0) {
+            this.nextFramePosition = -(this.currentFrame * this.frameWidth);
+            this.enemyElement.style.backgroundPosition = `${this.nextFramePosition}px 0`;
+            this.currentFrame = (this.currentFrame + 1) % this.totalFrames;
+        }
     }
 
 
