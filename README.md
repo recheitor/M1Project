@@ -1,3 +1,3 @@
-# First Project with HTML | CSS | DOM practice  
+# First Project with HTML | CSS | JS | DOM practice  
 
 Deployed URL : https://recheitor.github.io/M1Project/
